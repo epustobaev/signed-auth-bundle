@@ -12,6 +12,25 @@ The SignedAuthBundle allows you to use token with hashed request parameters and 
 * Configurable hash params: secret key getter, hash string concatenation delimiter, token delimiter, token key name
 * Ability to sign params from request(uri, host, etc), headers and query(POST and GET)
 
+## Installation
+
+Require the `epustobaev/signed-auth-bundle` package in your composer.json and update your dependencies.
+
+    $ composer require epustobaev/signed-auth-bundle
+
+Add the SignedAuthBundle to your application's kernel:
+
+    public function registerBundles()
+    {
+        $bundles = array(
+            ...
+            new Dendy\Bundle\SignedAuthBundle\DendySignedAuthBundle(),
+            ...
+        );
+        ...
+    }
+
+
 ## Configuration
 
 Example uses orm user provider, token in request header "x-auth", sign params from headers, query and request, 
