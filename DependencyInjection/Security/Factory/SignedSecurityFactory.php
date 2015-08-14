@@ -4,7 +4,7 @@
  * @author    Edward Pustobaev <eduardpustobaev@gmail.com>
  */
 
-namespace Dendy\Bundle\SignedAuthBundle\DependencyInjection\Security\Factory;
+namespace Dendy\SignedAuthBundle\DependencyInjection\Security\Factory;
 
 use Symfony\Bundle\SecurityBundle\DependencyInjection\Security\Factory\SecurityFactoryInterface;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
@@ -16,7 +16,7 @@ use Symfony\Component\DependencyInjection\Reference;
 /**
  * Class SignedSecurityFactory
  *
- * @package Dendy\Bundle\SignedAuthBundle\DependencyInjection\Security\Factory
+ * @package Dendy\SignedAuthBundle\DependencyInjection\Security\Factory
  */
 class SignedSecurityFactory implements SecurityFactoryInterface
 {

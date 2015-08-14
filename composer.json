@@ -6,12 +6,13 @@
   "license": "MIT",
   "require": {
     "php": ">=5.5.0",
-    "symfony/symfony": ">=2.6",
+    "symfony/symfony": ">=2.4",
     "symfony/monolog-bundle": "~2.4"
   },
   "autoload": {
     "psr-0": {
-      "Dendy\\Bundle": ""
+      "Dendy\\SignedAuthBundle": ""
     }
-  }
+  },
+  "target-dir": "Dendy/SignedAuthBundle"
 }

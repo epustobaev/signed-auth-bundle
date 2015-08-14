@@ -1,6 +1,6 @@
 <?php
 
-namespace Dendy\Bundle\SignedAuthBundle\DependencyInjection;
+namespace Dendy\SignedAuthBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

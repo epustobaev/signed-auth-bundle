@@ -1,6 +1,6 @@
 <?php
 
-namespace Dendy\Bundle\SignedAuthBundle\DependencyInjection;
+namespace Dendy\SignedAuthBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Dendy\Bundle\SignedAuthBundle;
+namespace Dendy\SignedAuthBundle;
 
-use Dendy\Bundle\SignedAuthBundle\DependencyInjection\Security\Factory\SignedSecurityFactory;
+use Dendy\SignedAuthBundle\DependencyInjection\Security\Factory\SignedSecurityFactory;
 use Symfony\Bundle\SecurityBundle\DependencyInjection\SecurityExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 /**
  * Class SignedAuthBundle
  *
- * @package Dendy\Bundle\SignedAuthBundle
+ * @package Dendy\SignedAuthBundle
  */
 class DendySignedAuthBundle extends Bundle
 {

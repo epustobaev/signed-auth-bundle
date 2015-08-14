@@ -4,9 +4,9 @@
  * @author    Edward Pustobaev <eduardpustobaev@gmail.com>
  */
 
-namespace Dendy\Bundle\SignedAuthBundle\Security\Firewall;
+namespace Dendy\SignedAuthBundle\Security\Firewall;
 
-use Dendy\Bundle\SignedAuthBundle\Security\Authentication\SignedUserToken;
+use Dendy\SignedAuthBundle\Security\Authentication\SignedUserToken;
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
@@ -18,7 +18,7 @@ use Symfony\Component\Security\Http\Firewall\ListenerInterface;
 /**
  * Class SignedAuthListener
  *
- * @package Dendy\Bundle\SignedAuthBundle\Security\Firewall
+ * @package Dendy\SignedAuthBundle\Security\Firewall
  */
 class SignedAuthListener implements ListenerInterface
 {
