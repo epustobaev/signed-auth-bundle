@@ -1,7 +1,5 @@
 # SignedAuthBundle
 
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/bc1d329f-4dcf-436b-8c95-994768df6b7b/big.png)](https://insight.sensiolabs.com/projects/bc1d329f-4dcf-436b-8c95-994768df6b7b)
-
 ## About
 
 The SignedAuthBundle allows you to use token with hashed request parameters and secret key for authentication in your project.
