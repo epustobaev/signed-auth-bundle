@@ -54,9 +54,9 @@ class SignedAuthProvider implements AuthenticationProviderInterface
     public function authenticate(TokenInterface $token)
     {
         /** @var SignedTokenInterface $token */
-        $user       = $this->userProvider->loadUserByUsername($token->getUsername());
-        $signData   = $this->getAuthSignData($token->getRequest());
-        $signData[] = $user->getPassword();
+        $user              = $this->userProvider->loadUserByUsername($token->getUsername());
+        $signData          = $this->getAuthSignData($token->getRequest());
+        $signData[]        = $user->{$this->config['secret_getter']}();
         $expectedSignature = hash($this->config['hash_alg'], implode($this->config['data_delimiter'], $signData));
         if ($token->getSignature() == $expectedSignature) {
             $token->setUser($user);
