@@ -78,12 +78,10 @@ class SignedAuthListener implements ListenerInterface
         $token->setRequest($request);
         try {
             $authenticatedToken = $this->authManager->authenticate($token);
-            //dump($authenticatedToken);
             $this->tokenStorage->setToken($authenticatedToken);
 
             return true;
         } catch (AuthenticationException $failed) {
-            // ... you might log something here
         }
         $response = new Response('', Response::HTTP_FORBIDDEN);
         $event->setResponse($response);
