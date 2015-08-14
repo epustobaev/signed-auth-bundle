@@ -45,12 +45,21 @@ security:
 ```
 
 `auth_type` - default value is 'request' - get token value from GET or POST, in opposite 'headers' means that the token is provided in request headers.
+
 `request_key` - default value is 'sign', otherwise can be any string value.
+
 `token_delimiter` - default value is ':', otherwise can be any string value.
+
 `data_delimiter` - default value is ':', otherwise can be any string value.
+
 `hash_alg` - default value is 'md5', see accepted values http://php.net/manual/ru/function.hash-algos.php
+
 `secret_getter` - method of user object to get secret key.
+
 `signed_params` - signed values configuration, getting data from Symfony\Component\HttpFoundation\Request instance.
-`signed_params[headers]` - array of request headers to sign($request->headers->get('Host')). 
-`signed_params[query]` - array of request query params($request->get('Host'))
-`signed_params[request]` - array of request query params($request->getRequestUri())
+
+`signed_params[headers]` - array of request headers to sign(`$request->headers->get('Host')`). 
+
+`signed_params[query]` - array of request query params(`$request->get('Host')`)
+
+`signed_params[request]` - array of request query params(`$request->getRequestUri()`)
