@@ -1,7 +1,7 @@
 <?php
 /**
  * @copyright 2015
- * @author    Edward Pustobaev <epustobaev@nebupay.com>
+ * @author    Edward Pustobaev <eduardpustobaev@gmail.com>
  */
 
 namespace Dendy\Bundle\SignedAuthBundle\Security\Firewall;
