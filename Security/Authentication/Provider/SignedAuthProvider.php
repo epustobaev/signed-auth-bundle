@@ -4,11 +4,11 @@
  * @author    Edward Pustobaev <eduardpustobaev@gmail.com>
  */
 
-namespace Dendy\Bundle\SignedAuthBundle\Security\Authentication\Provider;
+namespace Dendy\SignedAuthBundle\Security\Authentication\Provider;
 
-use Dendy\Bundle\SignedAuthBundle\Security\Authentication\Exception\RequestValueGetException;
-use Dendy\Bundle\SignedAuthBundle\Security\Authentication\SignedTokenInterface;
-use Dendy\Bundle\SignedAuthBundle\Security\Authentication\SignedUserToken;
+use Dendy\SignedAuthBundle\Security\Authentication\Exception\RequestValueGetException;
+use Dendy\SignedAuthBundle\Security\Authentication\SignedTokenInterface;
+use Dendy\SignedAuthBundle\Security\Authentication\SignedUserToken;
 use Monolog\Logger;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Authentication\Provider\AuthenticationProviderInterface;
@@ -19,7 +19,7 @@ use Symfony\Component\Security\Core\User\UserProviderInterface;
 /**
  * Class SignedAuthProvider
  *
- * @package Dendy\Bundle\SignedAuthBundle\Security\Authentication\Provider
+ * @package Dendy\SignedAuthBundle\Security\Authentication\Provider
  */
 class SignedAuthProvider implements AuthenticationProviderInterface
 {

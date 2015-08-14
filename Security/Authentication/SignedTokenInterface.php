@@ -4,7 +4,7 @@
  * @author    Edward Pustobaev <eduardpustobaev@gmail.com>
  */
 
-namespace Dendy\Bundle\SignedAuthBundle\Security\Authentication;
+namespace Dendy\SignedAuthBundle\Security\Authentication;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
@@ -12,7 +12,7 @@ use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 /**
  * Interface SignedTokenInterface
  *
- * @package Dendy\Bundle\SignedAuthBundle\Security\Authentication
+ * @package Dendy\SignedAuthBundle\Security\Authentication
  */
 interface SignedTokenInterface extends TokenInterface
 {

@@ -1,9 +1,9 @@
 services:
     signed.security.authentication.provider:
-        class: Dendy\Bundle\SignedAuthBundle\Security\Authentication\Provider\SignedAuthProvider
+        class: Dendy\SignedAuthBundle\Security\Authentication\Provider\SignedAuthProvider
         arguments: ["@logger", "", ""]
         public: false
     signed.security.authentication.listener:
-        class: Dendy\Bundle\SignedAuthBundle\Security\Firewall\SignedAuthListener
+        class: Dendy\SignedAuthBundle\Security\Firewall\SignedAuthListener
         arguments: ["@security.token_storage", "@security.authentication.manager", ""]
         public: false
