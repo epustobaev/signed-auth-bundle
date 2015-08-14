@@ -72,6 +72,7 @@ class SignedSecurityFactory implements SecurityFactoryInterface
                 ->scalarNode('token_delimiter')->defaultValue(':')->end()
                 ->scalarNode('data_delimiter')->defaultValue('')->end()
                 ->scalarNode('hash_alg')->defaultValue('md5')->end()
+                ->scalarNode('secret_getter')->defaultValue('getPassword')->end()
                 ->arrayNode('signed_params')
                     ->children()
                         ->arrayNode('headers')->prototype('scalar')->end()->end()
