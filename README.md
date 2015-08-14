@@ -4,7 +4,7 @@
 
 ## About
 
-The SignedAuthBundle allows you to use token with hashed request parameters and secret key for authentication in your project.
+The SignedAuthBundle allows you to use token with hashed request parameters and secret key for authentication in your Symfony 2 project.
 
 ## Features
 
