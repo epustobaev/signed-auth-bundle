@@ -1,0 +1,17 @@
+{
+  "name": "epustobaev/signed-auth-bundle",
+  "description": "Signed auth bundle",
+  "version": "0.1",
+  "type": "library",
+  "homepage": "https://github.com/epustobaev",
+  "require": {
+    "php": ">=5.5.0",
+    "symfony/symfony": ">=2.6",
+    "symfony/monolog-bundle": "~2.4"
+  },
+  "autoload": {
+    "psr-0": {
+      "Dendy\\Bundle": ""
+    }
+  }
+}
