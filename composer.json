@@ -1,6 +1,7 @@
 {
   "name": "epustobaev/signed-auth-bundle",
   "description": "Signed auth bundle",
+  "keywords": ["authentication", "symfony2", "sign", "hash", "api", "rest"],
   "type": "library",
   "homepage": "https://github.com/epustobaev",
   "license": "MIT",
